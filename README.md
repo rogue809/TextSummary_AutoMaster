@@ -1,6 +1,6 @@
 # TextSummary_AutoMaster
 ## 关键词
-NLP文本摘要模型    中文客服对话生成报告    word2vec预训练词向量    seq2seq模型    attention机制    BeamSearch、PGN优化
+NLP文本摘要模型&nbsp&nbsp    中文客服对话生成报告    word2vec预训练词向量    seq2seq模型    attention机制    BeamSearch、PGN优化
 
 ## 数据集
 
