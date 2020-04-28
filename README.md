@@ -2,39 +2,29 @@
 ## 关键词
 NLP文本摘要模型    中文客服对话生成报告    word2vec预训练词向量    seq2seq模型    attention机制    BeamSearch、PGN优化
 
+
 ## 数据集
-
-
 训练集（82943条记录）建立模型，基于汽车品牌、车系、车况的问题与对话的文本，输出建议的报告文本。如下：
-
 | Brand | Model | Question | Dialogue | Report |
 | --- | --- | --- | --- | ---|
 | 奔驰 | 奔驰GL级 |  变速箱旁边漏机油 | 技师说：具体是哪个部位呢？是发动机和变速器正中间位置吗？车主说... | 随时联系 |
 
-
 测试集（20000条记录）使用训练好的模型，输出建议报告的结果文件。
 
 
-
-
 ## 项目文件说明
-seq2seq模型的baseline版本，使用tensorflow2.0搭建。
+seq2seq模型的baseline版本， 使用tensorflow2.0搭建。
 
-后续：
-
-paddlepaddle版本
-
-transformer优化模型
-
-用BERT做预训练
-
+## 后续
+paddlepaddle版本;
+transformer优化模型;
+用BERT做预训练;
 pytorch版
 
 
-
-
 ## 日志
-2020/4/27 分词和清洗数据，建立vocab词汇表
+2020/4/27 分词和清洗数据，
+2020/4/29 建立vocab词汇表
 
 2020// word2vec预训练词向量
 
@@ -56,6 +46,7 @@ pytorch版
 
 1.preprocess.py
 完成原始数据的解析与存储
+
 
 
 2.data_reader.py
