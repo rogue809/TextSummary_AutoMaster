@@ -15,7 +15,7 @@ NLP文本摘要模型    中文客服对话生成报告    word2vec预训练词�
 ## 项目文件说明
 seq2seq模型的baseline版本， 使用tensorflow2.0搭建。
 
-## 后续
+### 后续
 paddlepaddle版本;
 transformer优化模型;
 用BERT做预训练;
@@ -41,12 +41,9 @@ pytorch版
 
 
 
-
 ## 代码部分
-
 1.preprocess.py
 完成原始数据的解析与存储
-
 
 
 2.data_reader.py
