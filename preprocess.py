@@ -1,6 +1,5 @@
 import numpy as np 
 import pandas as pd
-import jieba
 from jieba import posseg
 from utils.tokenizer import segment
 
