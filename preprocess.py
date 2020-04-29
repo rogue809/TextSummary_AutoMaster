@@ -5,6 +5,8 @@ from jieba import posseg
 from utils.tokenizer import segment
 
 
+Remove_Words = ['|', '[', ']', '语音', '图片']
+
 
 def read_stopwords(path):
 	'''读取停用词'''
@@ -16,12 +18,11 @@ def read_stopwords(path):
     return lines
 
 
-
-Remove_Words = ['|', '[', ']', '语音', '图片']
 def remove_words(words_list):
     '''读取无用词'''
     words_list = [word fow word in words_list if word not in Remove_Words]
     return words_list
+
 
 def parse_date(train_path, test_path):
     '''去除填充空值'''
@@ -37,6 +38,7 @@ def parse_date(train_path, test_path):
     test_x = test_df.Question.str.cat(test_df.Dialogue)
     test_y = []
     return train_x, train_y, test_x, test_y
+
 
 def save_data(data_1, data_2, data_3, data_path_1, data_path_2, data_path_3, stop_words_path=''):
     '''清洗、分词保存数据'''
@@ -76,14 +78,13 @@ def save_data(data_1, data_2, data_3, data_path_1, data_path_2, data_path_3, sto
                 f3.write('\n')
                 count_3 += 1
         print('test_x length is {}',count_3)
-        
+     
+
 def preprocess_sentence(sentence):
     '''句子分词'''
     seg_list = segment(sentence.strip(), cut_type='word')
     seg_line = ' '.join(seg_list)
     return seg_line
-
-
 
 
 if __name__ == '__main__':
