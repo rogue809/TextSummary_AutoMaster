@@ -23,11 +23,14 @@ pytorch版
 
 
 ## 日志
-2020/4/27 分词和清洗数据，
+2020/4/27 分词和清洗数据
+preprocess.py
 
 2020/4/29 建立vocab词汇表
+data_reader.py
 
-2020// word2vec预训练词向量
+2020/5/3 word2vec预训练词向量
+utils/build_w2v.py
 
 2020// 搭建seq2seq模型(encoder,decoder,attention层）
 
@@ -45,7 +48,6 @@ pytorch版
 ## 代码部分
 1.preprocess.py
 完成原始数据的解析与存储
-
 
 2.data_reader.py
 读取数据，并建立vocab
